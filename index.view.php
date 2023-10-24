@@ -8,12 +8,14 @@
 </head>
 
 <body>
+    <h1>Gente suscrita
     <ol>
         <?php foreach ($clientes as $cliente) : ?>
             <li>
-                <?php echo $cliente['Nombre']; ?>
-            <?php endforeach; ?>
-            <br>
+            <?= $cliente['Nombre']; ?> (<?= $cliente['Lista de pedidos']; ?>), por <?= $cliente['autor'] ?>
+           
             </li>
-
+            <?php endforeach; ?>
+    </ol>
+    </h1>
 </html>
